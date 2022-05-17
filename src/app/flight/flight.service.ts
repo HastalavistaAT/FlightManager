@@ -9,7 +9,7 @@ const headers = new HttpHeaders().set('Accept', 'application/json');
 @Injectable()
 export class FlightService {
   flightList: Flight[] = [];
-  api = 'http://www.angular.at/api/flight';
+  api = '/api/flight';
 
   constructor(private http: HttpClient) {
   }
